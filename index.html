@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram Reel Downloader</title>
+<style>
+body{
+font-family: Arial;
+text-align:center;
+margin-top:100px;
+background:#f2f2f2;
+}
+
+input{
+width:300px;
+padding:10px;
+}
+
+button{
+padding:10px 20px;
+background:#ff0050;
+color:white;
+border:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Instagram Reel Downloader</h1>
+
+<p>Paste Instagram Reel Link</p>
+
+<input id="url" placeholder="Paste Reel URL">
+
+<br><br>
+
+<button onclick="download()">Download</button>
+
+<script>
+function download(){
+var link=document.getElementById("url").value;
+window.open("https://snapinsta.app/?url="+link);
+}
+</script>
+
+</body>
+</html>
